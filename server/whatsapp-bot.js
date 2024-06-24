@@ -5,7 +5,6 @@ import axios from 'axios';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
 
-//const apiKey = "";
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
@@ -22,13 +21,11 @@ import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/ge
   };
 
 
-// Twilio credentials
 const accountSid = '';
 const authToken = '';
 const whatsappFrom = '';
 const twilioClient = new twilio(accountSid, authToken);
 
-// Google Generative AI credentials
 const apiKey = "";;
 
 // Express setup
